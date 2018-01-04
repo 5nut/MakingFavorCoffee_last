@@ -20,7 +20,7 @@ public class MyOpenHelper extends SQLiteOpenHelper{
             "NameCoffee text, " +
             "TypeCoffee text, " +
             "Espresso text," +
-            "Cocoapowder text, " +
+            "CocoaPowder text, " +
             "Milk text, " +
             "FrappePowder text, " +
             "Item text);";
