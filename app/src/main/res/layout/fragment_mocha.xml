@@ -145,22 +145,18 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="@dimen/padding">
-
                     <!--Name-->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
                         android:text="@string/cocoapowder"
                         android:textSize="@dimen/h2" />
-
-
                     <!--Unit-->
                     <TextView
-                        android:layout_gravity="center_horizontal"
                         android:id="@+id/txtUnitCoco"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
                         android:text="@string/teaspoons"
                         android:textSize="@dimen/h3" />
 
@@ -172,34 +168,30 @@
                         <!--Start-->
                         <TextView
                             android:id="@+id/txtStartCoco"
-                            android:textSize="@dimen/h2"
-                            android:text="0.5g"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+                            android:text="0.5g"
+                            android:textSize="@dimen/h2" />
 
                         <!--SeekBar-->
                         <SeekBar
-                            android:layout_centerVertical="true"
-                            android:layout_toRightOf="@+id/txtStartCoco"
-                            android:layout_toLeftOf="@+id/txtEndCoco"
                             android:id="@+id/seekCoco"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/txtEndCoco"
+                            android:layout_toRightOf="@+id/txtStartCoco" />
 
                         <!--End-->
                         <TextView
-                            android:layout_alignParentRight="true"
                             android:id="@+id/txtEndCoco"
-                            android:textSize="@dimen/h2"
-                            android:text="1g"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="1g"
+                            android:textSize="@dimen/h2" />
 
                     </RelativeLayout>
-
-
-
-
 
 
                 </LinearLayout>
@@ -209,35 +201,55 @@
                     android:id="@+id/nMilk"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:padding="@dimen/padding">
 
                     <!--Name-->
                     <TextView
-
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="@string/milk"
                         android:textSize="@dimen/h2" />
-
-                    <!--SeekBar-->
-                    <SeekBar
-                        android:id="@+id/seekBarMilk"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2" />
-
-
                     <!--Unit-->
                     <TextView
+                        android:layout_gravity="center_horizontal"
                         android:id="@+id/txtUnitMilk"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="right"
                         android:text="@string/teaspoons"
                         android:textSize="@dimen/h3" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--Start-->
+                        <TextView
+                            android:id="@+id/txtStartMilk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.5g"
+                            android:textSize="@dimen/h2" />
+
+                        <!--SeekBar-->
+                        <SeekBar
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/txtStartMilk"
+                            android:layout_toLeftOf="@+id/txtEndMilk"
+                            android:id="@+id/seekBarMilk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <!--End-->
+                        <TextView
+                            android:id="@+id/txtEndMilk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="1g"
+                            android:textSize="@dimen/h2" />
+
+
+                    </RelativeLayout>
 
                 </LinearLayout>
 

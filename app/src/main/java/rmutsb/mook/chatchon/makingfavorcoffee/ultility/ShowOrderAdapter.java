@@ -19,6 +19,7 @@ public class ShowOrderAdapter extends BaseAdapter {
     private String[] nameStrigs, typeStrings, espressoStrings,
             cocoStrings, milkStrings, ferStrings;
 
+
     public ShowOrderAdapter(Context context,
                             String[] nameStrigs,
                             String[] typeStrings,
