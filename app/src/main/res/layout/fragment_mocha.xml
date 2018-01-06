@@ -192,8 +192,6 @@
                             android:textSize="@dimen/h2" />
 
                     </RelativeLayout>
-
-
                 </LinearLayout>
 
                 <!--Milk-->
@@ -232,12 +230,12 @@
 
                         <!--SeekBar-->
                         <SeekBar
-                            android:layout_centerVertical="true"
-                            android:layout_toRightOf="@+id/txtStartMilk"
-                            android:layout_toLeftOf="@+id/txtEndMilk"
                             android:id="@+id/seekBarMilk"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/txtEndMilk"
+                            android:layout_toRightOf="@+id/txtStartMilk" />
 
                         <!--End-->
                         <TextView
@@ -248,9 +246,7 @@
                             android:text="1g"
                             android:textSize="@dimen/h2" />
 
-
                     </RelativeLayout>
-
                 </LinearLayout>
 
                 <!--Frappe Powder-->
@@ -258,35 +254,54 @@
                     android:id="@+id/linFrapp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:padding="@dimen/padding">
-
                     <!--Name-->
                     <TextView
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="@string/frappe_powder"
                         android:textSize="@dimen/h2" />
 
-                    <!--SeekBar-->
-                    <SeekBar
-                        android:id="@+id/seekbarFrappe"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2" />
-
-
                     <!--Unit-->
                     <TextView
+                        android:layout_gravity="center_horizontal"
                         android:id="@+id/txtUnitFrappe"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="right"
                         android:text="@string/teaspoons"
                         android:textSize="@dimen/h3" />
 
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--Start-->
+                        <TextView
+                            android:id="@+id/txtStartFrappe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.5g"
+                            android:textSize="@dimen/h2" />
+
+                        <!--SeekBar-->
+                        <SeekBar
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/txtEndFrappe"
+                            android:layout_toRightOf="@+id/txtStartFrappe"
+                            android:id="@+id/seekbarFrappe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <!--End-->
+                        <TextView
+                            android:id="@+id/txtEndFrappe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="1g"
+                            android:textSize="@dimen/h2" />
+                    </RelativeLayout>
                 </LinearLayout>
 
             </LinearLayout>
